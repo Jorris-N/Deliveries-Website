@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .navbar{
+            position: fixed;
+            width: 100%;
+            border: 1px solid #222;
+            background-color: #111;
+            border-radius: 6px;
+            box-shadow: 0 1px 1px #777;
+        }
+        .new{
+            display: flex;
+            flex-direction: row;
+            background: #444;
+        }
+       .wrap .new ul{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+    
+        .wrap a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            height: 60px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+        .wrap ul{
+            background: #444;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        .wrap ul li:hover > a{
+            background-color: aliceblue;
+        }
+        .wrap ul li a:after{
+            left: 0;
+            bottom: 0;
+            width: 0;
+            position: absolute;
+            content: '';
+            transition: .7s;
+            background: #222;
+        }
+        .wrap ul li a:before{
+            right: 0;
+            top: 0;
+            width: 0;
+            position: absolute;
+            content: '';
+            transition: .7s;
+            background: #222;
+        }
+       .wrap li{
+            text-align: center;
+            width: 100%;
+        }
+        .wrap ul > li > a{
+            border-right: 1px solid #999;
+        }
+        .wrap ul > li:last-child > a{
+            border-right: none;
+        }
+        .wrap li:hover .sub1 > li{
+            display:block;
+            position: relative;
+            background: #444;
+            background: linear-gradient(#444, #111);
+            box-shadow: 0 -1px 0 rgba(255,255,255,.3);
+            border-radius: 3px;
+            top: 0;
+        }
+        .wrap li:hover .sub2 > li{
+            display:block;
+            position: relative;
+            background: #444;
+            background: linear-gradient(#444, #111);
+            box-shadow: 0 -1px 0 rgba(255,255,255,.3);
+            border-radius: 3px;
+            top: 0;
+        }
+        .wrap ul li ul li:hover > a{
+            background: #777;
+        }
+        .sub1 .sub2{
+            display: flex;
+            flex-direction: column;
+        }
+       
+        .sub1 li{
+            display: none;
+            position: relative;
+        }
+        
+        .sub2 li{
+            display: none;
+         }
+         .sub1, .sub2{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+         }
+         .new{
+             display: flex;
+             text-align: left;
+             height: 30px;
+         }
+         
+       
+    </style>
+    
+</head>
+<body>
+    <div class="wrap">
+        
+    <ul>
+        <img src="./Images/icon.png" height="60px">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us&nbsp;<i class="fa fa-caret-down"></i></a>
+            <ul class="sub1">
+                <li><a href="#">Company</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Services&nbsp;<i class="fa fa-caret-down"></i></a>
+        <ul class="sub2">
+            <li><a href="#">All Services</a></li>
+            <li><a href="#">Rail Freight</a></li>
+            <li><a href="#">Land Freight</a></li>
+            <li><a href="#">Air Freight</a></li>
+            <li><a href="#">Warehousing</a></li>
+        </ul>
+        </li>
+        <li><a href="#">Contact Us</a>
+        <ul class="sub2"></ul>
+        </li>
+        <li><a href="#">Drive For Us</a></li>
+    </ul>
+    </div>
+</body>
+</html>
