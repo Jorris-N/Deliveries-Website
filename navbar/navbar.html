@@ -13,29 +13,38 @@
         }
         .navbar{
             position: fixed;
+            margin: auto;
             width: 100%;
             border: 1px solid #222;
-            background-color: #111;
+            background-color: #444;
             border-radius: 6px;
             box-shadow: 0 1px 1px #777;
-        }
-        .new{
-            display: flex;
-            flex-direction: row;
-            background: #444;
-        }
-       .wrap .new ul{
-            display: flex;
-            flex-direction: row;
             text-align: center;
+            justify-content: center;
+          
         }
-    
+        .wrap{
+            display: flex;
+            flex-direction: row;
+            flex-flow: row nowrap;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .wrapRight, .wrapLeft{
+            display: flex;
+            flex-direction: row;
+            flex-flow: row nowrap;
+            width: 300px;
+            z-index: 1;
+        }
         .wrap a{
             display: flex;
+            text-align: center;
             align-items: center;
             justify-content: center;
             color: #999;
-            height: 60px;
+            height: 40px;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-weight: bold;
             text-decoration: none;
@@ -44,7 +53,7 @@
         .wrap ul{
             background: #444;
             list-style: none;
-            display: flex;
+            display:flex;
             justify-content: center;
         }
         .wrap ul li:hover > a{
@@ -55,8 +64,6 @@
             bottom: 0;
             width: 0;
             position: absolute;
-            content: '';
-            transition: .7s;
             background: #222;
         }
         .wrap ul li a:before{
@@ -64,8 +71,6 @@
             top: 0;
             width: 0;
             position: absolute;
-            content: '';
-            transition: .7s;
             background: #222;
         }
        .wrap li{
@@ -99,6 +104,9 @@
         .wrap ul li ul li:hover > a{
             background: #777;
         }
+        .wrap ul li img{
+            justify-content: left;
+        }
         .sub1 .sub2{
             display: flex;
             flex-direction: column;
@@ -118,21 +126,29 @@
             flex-direction: column;
             width: 20%;
          }
-         .new{
+         .top{
              display: flex;
-             text-align: left;
-             height: 30px;
+             flex-direction: column;
          }
-         
+        .top img{
+            justify-content: left;
+        }
+        
+      
+       
        
     </style>
     
 </head>
 <body>
+    <div class="logo">
+        <img src="../Images/icon.png" height="40" alt="Marshall Group">
+    </div>
     <div class="wrap">
+        <div class="wrapRight">
         
     <ul>
-        <img src="./Images/icon.png" height="60px">
+        <!-- <li><img src="./Images/icon.png" height="60px"></li> -->
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us&nbsp;<i class="fa fa-caret-down"></i></a>
             <ul class="sub1">
@@ -155,6 +171,15 @@
         </li>
         <li><a href="../drive.html">Drive For Us</a></li>
     </ul>
+    </div>
+    <div class="wrapLeft">
+        <ul>
+            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+            <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+        </ul>
+    </div>
     </div>
 </body>
 </html>
