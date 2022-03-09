@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    overflow-x: hidden;
+    background-size: 1366px;
+
+}
+main{
+    max-width:100%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+.navbar{
+    background: #87CEEB;
+    
+}
+.intro{
+  background-image: url(../Images/man.jpg);
+  height: 540px;
+}
+.intro h1{
+    padding-top: 180px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#fff;
+    align-items: center;
+    text-align: center;
+}
+.intro h3, p{
+    color:#fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: center;
+    text-align: center;
+}
+.divider{
+    margin-left: 30%;
+    align-items: center;
+    width: 40%;
+    height: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-top: 2px solid #87CEEB;
+}
+.buttons{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.service{
+    background: #fff;
+    color: #87CEEB;
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: 130px;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 2%;
+}
+.con{
+    background: #87CEEB;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: 130px;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 2%;
+}
+.service:hover, .con:hover{
+    cursor: pointer;
+    transform:scale(120%, 120%)
+}
