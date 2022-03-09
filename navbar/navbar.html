@@ -31,28 +31,23 @@
             justify-content: space-around;
             align-items: center;
         }
-        .wrapRight, .wrapLeft{
-            display: flex;
-            flex-direction: row;
-            flex-flow: row nowrap;
-            width: 300px;
-            z-index: 1;
-        }
         .wrap a{
             display: flex;
             text-align: center;
             align-items: center;
             justify-content: center;
             color: #999;
-            height: 40px;
+            height: 60px;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-weight: bold;
             text-decoration: none;
             text-transform: capitalize;
         }
         .wrap ul{
+            justify-content: flex-end;
             background: #444;
             list-style: none;
+            width: 50%;
             display:flex;
             justify-content: center;
         }
@@ -104,9 +99,6 @@
         .wrap ul li ul li:hover > a{
             background: #777;
         }
-        .wrap ul li img{
-            justify-content: left;
-        }
         .sub1 .sub2{
             display: flex;
             flex-direction: column;
@@ -120,18 +112,24 @@
         .sub2 li{
             display: none;
          }
-         .sub1, .sub2{
+      
+         .wrap .sub1, .wrap .sub2{
             position: absolute;
             display: flex;
             flex-direction: column;
-            width: 20%;
+            width: 10%;
          }
          .top{
              display: flex;
              flex-direction: column;
          }
-        .top img{
-            justify-content: left;
+        .wrap img{
+            align-self: flex-start;
+            justify-content: flex-start;
+        }
+        .logo{
+            background-color:#777;
+    
         }
         
       
@@ -141,45 +139,32 @@
     
 </head>
 <body>
-    <div class="logo">
-        <img src="../Images/icon.png" height="40" alt="Marshall Group">
-    </div>
     <div class="wrap">
-        <div class="wrapRight">
-        
+        <img src="../Images/icon.png" height="60" alt="Marshall Group">
+              
     <ul>
-        <!-- <li><img src="./Images/icon.png" height="60px"></li> -->
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us&nbsp;<i class="fa fa-caret-down"></i></a>
+        <li class="list active"><a href="../index.html">Home</a></li>
+        <li class="list"><a href="#">About Us&nbsp;<i class="fa fa-caret-down"></i></a>
             <ul class="sub1">
-                <li><a href="../About Us/company.html">Company</a></li>
-                <li><a href="../About Us/history.html">History</a></li>
-                <li><a href="../About Us/careers.html">Careers</a></li>
+                <li class="list"><a href="../company.html">Company</a></li>
+                <li class="list"><a href="../history.html">History</a></li>
+                <li class="list"><a href="../careers.html">Careers</a></li>
             </ul>
         </li>
-        <li><a href="#">Services&nbsp;<i class="fa fa-caret-down"></i></a>
+        <li class="list"><a href="#">Services&nbsp;<i class="fa fa-caret-down"></i></a>
         <ul class="sub2">
-            <li><a href="../Services/services.html">All Services</a></li>
-            <li><a href="../Services/train.html">Rail Freight</a></li>
-            <li><a href="../Services/road.html">Land Freight</a></li>
-            <li><a href="../Services/air.html">Air Freight</a></li>
-            <li><a href="../Services/warehouse.html">Warehousing</a></li>
+            <li class="list"><a href="../services.html">All Services</a></li>
+            <li class="list"><a href="../train.html">Rail Freight</a></li>
+            <li class="list"><a href="../road.html">Land Freight</a></li>
+            <li class="list"><a href="../air.html">Air Freight</a></li>
+            <li class="list"><a href="../warehouse.html">Warehousing</a></li>
         </ul>
         </li>
-        <li><a href="../contact.html">Contact Us</a>
+        <li class="list"><a href="../contact.html">Contact Us</a>
         <ul class="sub2"></ul>
         </li>
-        <li><a href="../drive.html">Drive For Us</a></li>
+        <li class="list"><a href="../drive.html">Drive For Us</a></li>
     </ul>
-    </div>
-    <div class="wrapLeft">
-        <ul>
-            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-            <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-            <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
-        </ul>
-    </div>
     </div>
 </body>
 </html>
