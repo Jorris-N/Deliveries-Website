@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    overflow-x: hidden;
+    background-size: 1366px;
+
+}
+main{
+    max-width:100%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+.navbar{
+    background: #87CEEB;
+    
+}
+.intro{
+  background-image: url(../Images/man.jpg);
+  height: 540px;
+}
+
+.intro h1{
+    padding-top: 180px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#fff;
+    align-items: center;
+    text-align: center;
+}
+.intro h3, .intro p{
+    color:#fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: center;
+    text-align: center;
+}
+.divider{
+    margin-left: 30%;
+    align-items: center;
+    width: 40%;
+    height: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-top: 2px solid #87CEEB;
+}
+.buttons{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.service{
+    background: #fff;
+    color: #87CEEB;
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: 130px;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 2%;
+}
+.con{
+    background: #87CEEB;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: 130px;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 2%;
+}
+.service:hover, .con:hover{
+    cursor: pointer;
+    transform:scale(120%, 120%)
+}
+.activity{
+    display: flex;
+    margin-left: 8%;
+    flex-wrap: row wrap;
+    justify-content: space-evenly;
+    margin: 4%;
+    margin-right: 8%;
+    background: linear-gradient(aliceblue)
+}
+.transport{
+    justify-content: flex-start;
+    box-sizing: border-box;
+    
+}
+.outside{
+    justify-content: flex-end;
+    margin-left: 2%;
+}
+.monitor{
+    margin-left: 2%;
+}
+.transport h2, .monitor h2, .outside h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+.transport h2:hover, .monitor h2:hover, .outside h2:hover{
+    color: #87CEEB;
+}
+.transport p, .monitor p, .outside p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #919191;
+}
+.warehouse{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../Images/thestandingdesk-wJLwq637lOw-unsplash.jpg);
+    height: 360px;
+    background-color: black;
+}
+.warehouse h1{
+    color: #fff;
+    text-align: left;
+    padding-top: 150px;
+    font-size: 60px;
+    font-family: Segoe UI Semibold;
+}
+.warehouse p{
+    color: #87CEEB;
+    font-family: calibri;
+    font-size: 24px;
+    text-align: left;
+    font-weight: bold;
+}
+.info{
+    display: flex;
+    margin-left: 8%;
+    flex-wrap: row wrap;
+    justify-content: space-evenly;
+    margin: 4%;
+    margin-right: 8%;
+    background: linear-gradient(aliceblue)
+}
+.info a{
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: black;
+}
+.info a:hover{
+    color: #87CEEB;
+    transform:scale(120%, 120%);
+}
+.info li{
+    list-style-type: none;
+    margin-bottom: 8%;
+    font-size: 20px;
+    font-family: calibri;
+}
+.info li i{
+    color: #87CEEB;
+    font-size: 18px;
+}
